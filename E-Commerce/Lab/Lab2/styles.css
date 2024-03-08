@@ -1,0 +1,73 @@
+.container1 {
+    border: 3px solid red;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.container2 {
+    height: 80vh;
+    border: 3px solid blue;
+    max-width: 100%;
+    position: relative;
+    margin: 5vh;
+}
+
+nav {
+    position: absolute;
+    width: 100%; /* Set the width to 100% */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    -ms-transition: 0.2s linear;
+    -o-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover {
+    background: #1d4f71;
+    color: #fff;
+}
+
+nav ul li a .fa {
+    width: 16px;
+    text-align: center;
+    margin-right: 5px;
+    float: right;
+}
+
+nav ul ul {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 100%; /* Position the sub-menu below the parent item */
+    left: 0;
+    width: 20%; /* Make the sub-menu width 100% */
+}
+
+nav ul li ul li {
+    width: 20%; /* Set the width to 100% for each sub-menu item */
+}
+
+nav ul li ul li a {
+    border-left: 4px solid transparent;
+    padding: 10px 20px;
+}
+
+nav ul li ul li a:hover {
+    border-left: 4px solid #3498db;
+}
